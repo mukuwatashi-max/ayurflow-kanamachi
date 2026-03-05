@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayur Flow（アーユルフロー）金町 | 女性専門・朝活ヨガスタジオ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5A504B',
+                        accent: '#B89B8D',
+                        light: '#FAF8F5',
+                        sage: '#98A892',
+                        sand: '#E6E2DB',
+                        textmain: '#4A423E',
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', 'sans-serif'],
+                        serif: ['"Shippori Mincho"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Noto Sans JP', sans-serif; color: #4A423E; background-color: #FAF8F5; line-height: 1.8; }
+        .font-serif { font-family: 'Shippori Mincho', serif; }
+        .hero-bg {
+            background-image: url('images/topview.png');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(to bottom, rgba(40, 35, 30, 0.4), rgba(40, 35, 30, 0.7));
+            z-index: 1;
+        }
+        .hero-content { position: relative; z-index: 2; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="antialiased selection:bg-accent selection:text-white">
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 bg-white/95 backdrop-blur-sm z-50 border-b border-sand shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-3 md:py-4 flex justify-between items-center">
+            <div class="font-serif text-xl md:text-2xl font-bold tracking-wider text-primary flex items-center">
+                Ayur Flow <span class="text-xs md:text-sm font-sans font-normal ml-2 mt-1">金町</span>
+            </div>
+            <nav class="hidden lg:flex space-x-6 text-sm font-medium text-primary">
+                <a href="#message" class="hover:text-accent transition">想い</a>
+                <a href="#features" class="hover:text-accent transition">特徴・メソッド</a>
+                <a href="#classes" class="hover:text-accent transition">クラス</a>
+                <a href="#voices" class="hover:text-accent transition">お客様の声</a>
+                <a href="#pricing" class="hover:text-accent transition">料金・Q&A</a>
+                <a href="#instructor" class="hover:text-accent transition">講師</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <a href="#flow" class="bg-[#06C755] text-white px-4 py-2 md:py-2.5 rounded-full text-xs md:text-sm font-bold hover:bg-[#05b34c] transition shadow-sm flex items-center">
+                    <i data-lucide="message-circle" class="w-4 h-4 mr-1"></i> LINEで体験予約
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-[90vh] min-h-[600px] flex items-center justify-center pt-16">
+        <div class="hero-overlay"></div>
+        <div class="hero-content text-center px-4 w-full max-w-5xl mx-auto">
+            <div class="inline-flex flex-col md:flex-row items-center justify-center bg-white/20 backdrop-blur-md border border-white/30 text-white text-xs md:text-sm px-6 py-2.5 rounded-full mb-8 font-medium tracking-wide shadow-lg">
+                <span class="flex items-center mb-1 md:mb-0 md:mr-3"><i data-lucide="flower-2" class="w-4 h-4 mr-1 text-pink-200"></i> 4/11グランドオープン記念</span>
+                <span class="font-bold text-accent bg-white px-3 py-0.5 rounded-full">Welcomeチケット3回 ¥3,000 受付中</span>
+            </div>
+            <h1 class="font-serif text-4xl md:text-5xl lg:text-7xl text-white font-medium leading-tight mb-6 md:mb-8 drop-shadow-md">
+                ここから、<br class="md:hidden">わたしが上向いていく。
+            </h1>
+            <p class="text-white/95 font-light text-base md:text-lg lg:text-xl leading-loose max-w-3xl mx-auto drop-shadow">
+                運動だけじゃない、これからのわたしが楽しみになる。<br>
+                <span class="inline-block mt-4 font-medium bg-white/20 px-5 py-2 rounded-sm backdrop-blur-sm tracking-widest text-sm md:text-base border border-white/10">
+                    40代からの心と身体に寄り添う 大人の朝活少人数制クラス<br>
+                    女性専門ヨガスタジオ — Ayur Flow 金町
+                </span>
+            </p>
+        </div>
+    </section>
+
+    <!-- 4つの基本情報バー -->
+    <section class="bg-white border-b border-sand shadow-sm relative z-20 -mt-2">
+        <div class="max-w-6xl mx-auto px-4 py-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 divide-x divide-sand/50 text-center">
+                <div class="px-2">
+                    <p class="text-[10px] md:text-xs text-accent font-bold tracking-widest mb-1">ACCESS</p>
+                    <p class="text-xs md:text-sm font-medium text-primary">金町駅 徒歩3分</p>
+                </div>
+                <div class="px-2">
+                    <p class="text-[10px] md:text-xs text-accent font-bold tracking-widest mb-1">CAPACITY</p>
+                    <p class="text-xs md:text-sm font-medium text-primary">少人数 8名限定</p>
+                </div>
+                <div class="px-2">
+                    <p class="text-[10px] md:text-xs text-accent font-bold tracking-widest mb-1">EQUIPMENT</p>
+                    <p class="text-xs md:text-sm font-medium text-primary">手ぶらでOK</p>
+                </div>
+                <div class="px-2">
+                    <p class="text-[10px] md:text-xs text-accent font-bold tracking-widest mb-1">STYLE</p>
+                    <p class="text-xs md:text-sm font-medium text-primary">ヨガ・ピラティス</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message / Concept -->
+    <section id="message" class="py-24 md:py-32 bg-light relative overflow-hidden">
+        <div class="absolute top-20 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl -z-10"></div>
+        <div class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row gap-12 md:gap-20 items-center">
+            <div class="w-full md:w-5/12">
+                <img src="images/secondview.png" alt="朝のヨガ風景" class="rounded-t-full rounded-b-2xl shadow-xl w-full h-[500px] object-cover">
+            </div>
+            <div class="w-full md:w-7/12">
+                <p class="text-accent font-medium mb-4 tracking-widest text-sm">MESSAGE</p>
+                <h2 class="font-serif text-3xl md:text-4xl font-medium leading-loose mb-8 text-primary">
+                    朝の1時間が、<br>これからの「わたし」を創る。
+                </h2>
+                <div class="space-y-6 text-textmain/90 font-light leading-loose text-base md:text-lg">
+                    <p>仕事、家事、育児。女性の毎日は、自分のことを後回しにしてしまうほど慌ただしく過ぎていきます。ふと立ち止まったとき、「なんだかスッキリしない」「昔より疲れやすくなった」と感じることはありませんか？</p>
+                    <p>Ayur Flow（アーユルフロー）金町は、そんな忙しい女性が<strong class="font-medium text-primary border-b border-accent/30 pb-1">「自分だけのために過ごす、とっておきの朝時間」</strong>を提供する場所です。</p>
+                    <p>午前中に身体を動かすと疲れてしまう気がしますが、実はその反対で程よく動く常温のヨガはかえって午後の活力になっていくんです。シャワー不要でさっと来てさっと帰る身軽さで、その後の時間も有効に使えるのが忙しい女性に人気の理由です。</p>
+                    <p>誰かのためではなく、自分のために。ここから、心地よい1日を始めませんか。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ゆらぎ（共感） -->
+    <section class="py-24 bg-white border-y border-sand">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="font-serif text-2xl md:text-3xl font-medium mb-12 leading-relaxed text-primary">こんなお悩み、ありませんか？</h2>
+            <div class="bg-light p-8 md:p-12 rounded-2xl shadow-sm text-left max-w-3xl mx-auto border border-sand">
+                <ul class="space-y-8">
+                    <li class="flex items-start">
+                        <i data-lucide="check-circle-2" class="w-6 h-6 text-accent shrink-0 mr-4 mt-1"></i>
+                        <p class="text-base md:text-lg leading-relaxed"><strong class="font-medium text-primary">運動不足は感じているのに、ハードに動くのは体がついていかない。</strong>疲れているのに、うまく休めない。</p>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="check-circle-2" class="w-6 h-6 text-accent shrink-0 mr-4 mt-1"></i>
+                        <p class="text-base md:text-lg leading-relaxed">以前と比べて体力が落ちた気がする。<strong class="font-medium text-primary">体型だけでなく、心のバランスも崩しやすくなった</strong>と感じる。</p>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="check-circle-2" class="w-6 h-6 text-accent shrink-0 mr-4 mt-1"></i>
+                        <p class="text-base md:text-lg leading-relaxed">毎日忙しくて「自分の時間」は後回し。<strong class="font-medium text-primary">仕事も家庭も一生懸命なのに、自分のことだけは後まわし。</strong></p>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="check-circle-2" class="w-6 h-6 text-accent shrink-0 mr-4 mt-1"></i>
+                        <p class="text-base md:text-lg leading-relaxed"><strong class="font-medium text-primary">ホットヨガや大人数のジムは「なんか違う」と感じた。</strong>続かなかった理由が環境にあったのかもしれない。</p>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="check-circle-2" class="w-6 h-6 text-accent shrink-0 mr-4 mt-1"></i>
+                        <p class="text-base md:text-lg leading-relaxed"><strong class="font-medium text-primary">いつまでも好きなことを楽しめる体と心を持ち続けたい。</strong>そのための、自分に合った方法を知りたい。</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features & Method -->
+    <section id="features" class="py-24 md:py-32 bg-light">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16 md:mb-24">
+                <p class="text-accent font-medium mb-4 tracking-widest text-sm">FEATURES & METHOD</p>
+                <h2 class="font-serif text-3xl md:text-4xl font-medium leading-relaxed mb-6 text-primary">Ayur Flow 金町は、そんなあなたのお悩みに寄り添います。</h2>
+                <p class="max-w-2xl mx-auto text-textmain/80 leading-loose">日々の暮らしがもっと楽に、もっと心地よく。<br>4つのこだわりで、あなたの健康やライフスタイルをサポートします。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 mb-24">
+                <div class="flex flex-col md:flex-row gap-6 items-start">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm text-sage shrink-0 border border-sand">
+                        <i data-lucide="wind" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-accent tracking-widest mb-1">整える / 浄化</p>
+                        <h3 class="font-serif font-medium text-xl mb-3 text-primary">フローヨガで代謝UP・血流改善</h3>
+                        <p class="text-textmain/80 leading-loose text-sm md:text-base">代謝が落ちてくる40代に。呼吸と動きを連動させ流れるように動くことで、全身の血流とエネルギーを巡らせます。関節を温め、冷えや滞りのない身体へ。心身の滞りがぱっと晴れるような「深い浄化感」と「心の余白」を味わえます。</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-6 items-start">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm text-accent shrink-0 border border-sand">
+                        <i data-lucide="activity" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-accent tracking-widest mb-1">育てる / 土台</p>
+                        <h3 class="font-serif font-medium text-xl mb-3 text-primary">ピラティスでインナー・骨盤底筋ケア</h3>
+                        <p class="text-textmain/80 leading-loose text-sm md:text-base">体型の変化が気になる世代へ。無理な筋トレではなく、骨盤底筋やインナーマッスルにアプローチ。内側から引き締めることで、更年期の不調や姿勢の崩れを根本からサポートし、一生付き合う身体の「しなやかな土台」を育てます。</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-6 items-start">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm text-sage shrink-0 border border-sand">
+                        <i data-lucide="coffee" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-accent tracking-widest mb-1">安心 / 居場所</p>
+                        <h3 class="font-serif font-medium text-xl mb-3 text-primary">自分だけのサードプレイス</h3>
+                        <p class="text-textmain/80 leading-loose text-sm md:text-base">仕事や家庭の「役割」を脱ぎ捨てて、ありのままの自分に戻れる場所です。レッスン前後には「話すジャーナリング」や「季節のスパイス白湯」の時間を設け、誰かに感情や思いを話すことで心を軽くするお手伝します。</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-6 items-start bg-primary text-white p-6 md:p-8 rounded-2xl relative overflow-hidden shadow-lg">
+                    <div class="absolute -right-10 -bottom-10 opacity-10"><i data-lucide="droplet" class="w-48 h-48"></i></div>
+                    <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center text-accent shrink-0 relative z-10 border border-white/20">
+                        <i data-lucide="sun-moon" class="w-8 h-8"></i>
+                    </div>
+                    <div class="relative z-10">
+                        <p class="text-xs font-bold text-accent tracking-widest mb-1">知る / 一生モノの知恵</p>
+                        <h3 class="font-serif font-medium text-xl mb-3 text-white">アーユルヴェーダ（季節のケア・体質を知る）</h3>
+                        <p class="text-white/80 leading-loose text-sm md:text-base">インド伝承医学アーユルヴェーダの「リトゥチャリア（季節の過ごし方）」をベースに、今の自分に寄り添います。自分の体質（ドーシャ）を理解することで、なぜ不調が起きるのかを知り、日常のゆらぎを自分で整えられる賢い知恵を学びます。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-sand">
+                <div class="text-center mb-10">
+                    <h3 class="font-serif text-2xl md:text-3xl font-medium mb-4 text-primary">季節、時間帯、ライフステージ——<br>いまの「わたし」にぴったり向き合う<br class="md:hidden">アーユルヴェーダの知恵</h3>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <div class="border border-sand rounded-xl p-6 bg-light">
+                        <h4 class="font-serif text-xl font-bold mb-1 text-accent">Vata <span class="text-sm font-sans font-normal text-primary/60 ml-2">| 風・空</span></h4>
+                        <p class="text-sm font-medium mb-4 text-primary">不安・乾燥・冷えを感じる時に</p>
+                        <p class="text-xs font-bold tracking-widest text-primary/50 mb-2 border-b border-sand pb-1">Grounding & Warmth</p>
+                        <p class="text-sm text-textmain/80 leading-loose">ゆっくりと動き、下半身を安定させることで、心を落ち着かせ内側から温めます。</p>
+                    </div>
+                    <div class="border border-sand rounded-xl p-6 bg-light">
+                        <h4 class="font-serif text-xl font-bold mb-1 text-red-400">Pitta <span class="text-sm font-sans font-normal text-primary/60 ml-2">| 火・水</span></h4>
+                        <p class="text-sm font-medium mb-4 text-primary">イライラ・ほてり・批判的な時に</p>
+                        <p class="text-xs font-bold tracking-widest text-primary/50 mb-2 border-b border-sand pb-1">Cooling & Release</p>
+                        <p class="text-sm text-textmain/80 leading-loose">「吐く息」を意識したねじりで、溜まった過剰な熱を手放し、クールダウンさせます。</p>
+                    </div>
+                    <div class="border border-sand rounded-xl p-6 bg-light">
+                        <h4 class="font-serif text-xl font-bold mb-1 text-sage">Kapha <span class="text-sm font-sans font-normal text-primary/60 ml-2">| 水・地</span></h4>
+                        <p class="text-sm font-medium mb-4 text-primary">重だるい・むくみ・動きたくない時に</p>
+                        <p class="text-xs font-bold tracking-widest text-primary/50 mb-2 border-b border-sand pb-1">Awakening & Flow</p>
+                        <p class="text-sm text-textmain/80 leading-loose">胸を大きく開く動きで呼吸を取り込み、滞ったエネルギーを巡らせて活力を灯します。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div class="bg-white p-6 rounded-xl border border-sand">
+                    <h4 class="font-serif font-medium text-lg mb-2 text-primary">女性専用スタジオ</h4>
+                    <p class="text-sm text-textmain/70">周りの目を気にすることなく、すっぴんやリラックスした服装で安心してご参加いただけます。</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-sand">
+                    <h4 class="font-serif font-medium text-lg mb-2 text-primary">少人数制の丁寧な指導</h4>
+                    <p class="text-sm text-textmain/70">最大8名。お一人おひとりの骨格や柔軟性に合わせて、インストラクターが丁寧にサポートします。</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-sand">
+                    <h4 class="font-serif font-medium text-lg mb-2 text-primary">息苦しくない常温ヨガ</h4>
+                    <p class="text-sm text-textmain/70">ホットヨガの暑さや息苦しさが苦手な方へ。自然な室温で、自らの筋肉で熱を生み出します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- クラス紹介 -->
+    <section id="classes" class="py-24 bg-white border-y border-sand">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <p class="text-accent font-medium mb-4 tracking-widest text-sm">CLASSES</p>
+                <h2 class="font-serif text-3xl md:text-4xl font-medium mb-6 text-primary">クラス紹介</h2>
+                <p class="text-textmain/80 leading-loose max-w-2xl mx-auto mb-8">3つのカテゴリーから、今日の自分に合ったクラスを選べます。<br>レッスンの前後、心も体調も、もっと上向きに。<strong class="text-primary font-medium">「話すジャーナリング」と「季節のスパイス白湯」の時間</strong>をお楽しみください。</p>
+                <div class="flex flex-wrap justify-center gap-4 text-sm font-medium text-primary">
+                    <span class="bg-light px-4 py-2 rounded-full border border-sand shadow-sm">🌀 巡る - Meguru Flow</span>
+                    <span class="bg-light px-4 py-2 rounded-full border border-sand shadow-sm">🍃 緩まる - Yurumaru Rest</span>
+                    <span class="bg-light px-4 py-2 rounded-full border border-sand shadow-sm">✦ 整う - Totonou Care</span>
+                </div>
+            </div>
+
+            <div class="space-y-16 md:space-y-24">
+                <!-- 巡る -->
+                <div>
+                    <div class="mb-8 border-b-2 border-accent/30 pb-4">
+                        <h3 class="font-serif text-2xl md:text-3xl font-medium text-primary flex items-center">
+                            <span class="text-3xl mr-3">🌀</span> 巡る <span class="text-lg font-sans font-normal text-primary/60 ml-3">Meguru Flow — 代謝・血流・動く瞑想</span>
+                        </h3>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        <div class="bg-light rounded-2xl overflow-hidden shadow-sm border border-sand flex flex-col">
+                            <img src="images/ayurflow-yoga.png" alt="Ayur Flow Yoga" class="w-full h-48 object-cover">
+                            <div class="p-6 md:p-8 flex-grow flex flex-col">
+                                <div class="flex flex-wrap gap-2 mb-4 text-xs font-bold text-primary/70">
+                                    <span class="bg-white px-2 py-1 rounded border border-sand">土曜 8:45〜9:45</span>
+                                    <span class="bg-white px-2 py-1 rounded border border-sand">中級者向け</span>
+                                    <span class="bg-white px-2 py-1 rounded border border-sand">60分</span>
+                                </div>
+                                <h4 class="font-serif text-xl font-medium mb-2 text-primary">Ayur Flow Yoga</h4>
+                                <p class="text-xs text-accent font-medium mb-4">ヴィンヤサフロー／アーユルヴェーダ応用</p>
+                                <p class="text-textmain/80 text-sm leading-loose mb-6 flex-grow">当スタジオのオリジナルフローヨガです。季節ごとに変化する心身の状態に合わせてメニューを調律。常温のスタジオでもじんわりと汗ばむ運動量で、「代謝アップ」「筋力維持」「ストレス緩和」を一度に叶えます。運動不足の方や体が硬い方でも無理なく動けるよう、丁寧な誘導で行いますのでご安心ください。</p>
+                                <div class="flex gap-2 text-xs text-white">
+                                    <span class="bg-primary/80 px-2 py-1 rounded">代謝向上</span>
+                                    <span class="bg-primary/80 px-2 py-1 rounded">ストレス緩和</span>
+                                    <span class="bg-primary/80 px-2 py-1 rounded">動く瞑想</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-light rounded-2xl overflow-hidden shadow-sm border border-sand flex flex-col">
+                            <img src="images/mezame-yoga.png" alt="朝のめざめヨガ" class="w-full h-48 object-cover">
+                            <div class="p-6 md:p-8 flex-grow flex flex-col">
+                                <div class="flex flex-wrap gap-2 mb-4 text-xs font-bold text-primary/70">
+                                    <span class="bg-white px-2 py-1 rounded border border-sand">火曜 9:15〜10:00</span>
+                                    <span class="bg-[#06C755]/10 text-[#06C755] px-2 py-1 rounded border border-[#06C755]/20">初心者歓迎</span>
+                                    <span class="bg-white px-2 py-1 rounded border border-sand">45分</span>
+                                </div>
+                                <h4 class="font-serif text-xl font-medium mb-2 text-primary">朝のめざめヨガ</h4>
+                                <p class="text-xs text-accent font-medium mb-4">朝活 / 初心者歓迎 / 45分</p>
+                                <p class="text-textmain/80 text-sm leading-loose mb-6 flex-grow">「ヨガを始めてみたい」「朝活を習慣にしたい」方の入口に最適な45分クラス。ゆったりとした呼吸と基本的なポーズで、一日を気持ちよくスタートできます。</p>
+                                <div class="flex gap-2 text-xs text-white">
+                                    <span class="bg-primary/80 px-2 py-1 rounded">朝活</span>
+                                    <span class="bg-primary/80 px-2 py-1 rounded">はじめてOK</span>
+                                    <span class="bg-primary/80 px-2 py-1 rounded">45分</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 緩まる -->
+                <div>
+                    <div class="mb-8 border-b-2 border-sage/40 pb-4">
+                        <h3 class="font-serif text-2xl md:text-3xl font-medium text-primary flex items-center">
+                            <span class="text-3xl mr-3">🍃</span> 緩まる <span class="text-lg font-sans font-normal text-primary/60 ml-3">Yurumaru Rest — リラックス・更年期ケア・呼吸</span>
+                        </h3>
+                    </div>
+                    <div class="bg-light rounded-2xl overflow-hidden shadow-sm border border-sand flex flex-col md:flex-row">
+                        <img src="images/yurumeru-yoga.png" alt="私を緩めるヨガ" class="w-full md:w-2/5 h-48 md:h-auto object-cover">
+                        <div class="p-6 md:p-8 md:w-3/5 flex flex-col">
+                            <div class="flex flex-wrap gap-2 mb-4 text-xs font-bold text-primary/70">
+                                <span class="bg-white px-2 py-1 rounded border border-sand">火曜 10:20〜11:20</span>
+                                <span class="bg-[#06C755]/10 text-[#06C755] px-2 py-1 rounded border border-[#06C755]/20">初心者歓迎</span>
+                                <span class="bg-white px-2 py-1 rounded border border-sand">60分</span>
+                            </div>
+                            <h4 class="font-serif text-2xl font-medium mb-2 text-primary">私を緩めるヨガ</h4>
+                            <p class="text-xs text-sage font-bold mb-4 tracking-wide">更年期ケア／リラクゼーション／セルフケア</p>
+                            <p class="text-textmain/80 text-sm leading-loose mb-6 flex-grow">マッサージボールやブロックを活用して日々の蓄積疲れに優しくアプローチ。血行不良から来る肩こりや腰痛、呼吸の浅さ等、眠りの質の改善を目的とした「寝たままできるやさしい誘導瞑想」付き。心身の不調を整えたいときに。産後ママや育児疲れの方にもおすすめです🌿</p>
+                            <div class="flex flex-wrap gap-2 text-xs text-white">
+                                <span class="bg-sage px-2 py-1 rounded">肩こり・腰痛ケア</span>
+                                <span class="bg-sage px-2 py-1 rounded">誘導瞑想</span>
+                                <span class="bg-sage px-2 py-1 rounded">眠りの質改善</span>
+                                <span class="bg-sage px-2 py-1 rounded">初心者OK</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 整う -->
+                <div>
+                    <div class="mb-8 border-b-2 border-primary/20 pb-4">
+                        <h3 class="font-serif text-2xl md:text-3xl font-medium text-primary flex items-center">
+                            <span class="text-3xl mr-3">✦</span> 整う <span class="text-lg font-sans font-normal text-primary/60 ml-3">Totonou Care — 骨盤底筋・姿勢・ウェルエイジング</span>
+                        </h3>
+                    </div>
+                    <div class="bg-light rounded-2xl overflow-hidden shadow-sm border border-sand flex flex-col md:flex-row">
+                        <img src="images/choritsu-yoga.png" alt="私を調律するヨガとピラティス" class="w-full md:w-2/5 h-48 md:h-auto object-cover">
+                        <div class="p-6 md:p-8 md:w-3/5 flex flex-col">
+                            <div class="flex flex-wrap gap-2 mb-4 text-xs font-bold text-primary/70">
+                                <span class="bg-white px-2 py-1 rounded border border-sand">土曜 10:15〜11:15</span>
+                                <span class="bg-white px-2 py-1 rounded border border-sand">全レベル対応</span>
+                                <span class="bg-white px-2 py-1 rounded border border-sand">60分</span>
+                            </div>
+                            <h4 class="font-serif text-2xl font-medium mb-2 text-primary">私を調律するヨガとピラティス</h4>
+                            <p class="text-xs text-primary font-bold mb-4 tracking-wide">40代からのボディメイク／ウェルエイジング</p>
+                            <p class="text-textmain/80 text-sm leading-loose mb-6 flex-grow">コア（特に骨盤底筋群）・自律神経・痛みやこりの緩和・筋力維持による代謝機能向上・姿勢改善を目的としたウェルエイジングケアクラス。解剖学に基づいたピラティスのアプローチで、女性に大切なインナーマッスルを無理なく育てます。「鍛える」より「整える」感覚で続けられる、40代以降のボディメイクに。</p>
+                            <div class="flex flex-wrap gap-2 text-xs text-white">
+                                <span class="bg-primary px-2 py-1 rounded">骨盤底筋ケア</span>
+                                <span class="bg-primary px-2 py-1 rounded">姿勢改善</span>
+                                <span class="bg-primary px-2 py-1 rounded">自律神経</span>
+                                <span class="bg-primary px-2 py-1 rounded">ウェルエイジング</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お客様の声 -->
+    <section id="voices" class="py-24 bg-primary text-white overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 mb-12 text-center">
+            <p class="text-accent font-medium mb-4 tracking-widest text-sm">VOICES</p>
+            <h2 class="font-serif text-3xl md:text-4xl font-medium">お客様の声</h2>
+        </div>
+        <div class="flex overflow-x-auto hide-scrollbar snap-x snap-mandatory gap-6 pb-8" style="padding-left: max(1rem, calc((100vw - 72rem) / 2)); padding-right: max(1rem, calc((100vw - 72rem) / 2));">
+            <div class="snap-center shrink-0 w-[300px] md:w-[350px] bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
+                <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center text-accent"><i data-lucide="user" class="w-5 h-5"></i></div><div><p class="font-bold text-sm">40代 女性</p><p class="text-xs text-white/50">瞑想クラス</p></div></div>
+                <p class="text-white/80 text-sm leading-loose">「優しい声のガイドで瞑想に入りやすく、不慣れなレッスンでも安心できました。自分を整えるご褒美の時間でした。」</p>
+            </div>
+            <div class="snap-center shrink-0 w-[300px] md:w-[350px] bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
+                <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center text-accent"><i data-lucide="user" class="w-5 h-5"></i></div><div><p class="font-bold text-sm">40代 女性</p><p class="text-xs text-white/50">ヨガクラス</p></div></div>
+                <p class="text-white/80 text-sm leading-loose">「腰痛と膝の痛みが楽になりました。今日の身体を聞いてその日に合わせてくれるので、終わった後にスッキリして満足です。」</p>
+            </div>
+            <div class="snap-center shrink-0 w-[300px] md:w-[350px] bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
+                <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center text-accent"><i data-lucide="user" class="w-5 h-5"></i></div><div><p class="font-bold text-sm">40代 女性</p><p class="text-xs text-white/50">フローヨガ</p></div></div>
+                <p class="text-white/80 text-sm leading-loose">「フローヨガはストレスがぱっと浄化される心地よさ。いつも笑顔で迎えてくれるので来るのが楽しみです。」</p>
+            </div>
+            <div class="snap-center shrink-0 w-[300px] md:w-[350px] bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
+                <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center text-accent"><i data-lucide="user" class="w-5 h-5"></i></div><div><p class="font-bold text-sm">40代 女性</p><p class="text-xs text-white/50">対面ヨガ</p></div></div>
+                <p class="text-white/80 text-sm leading-loose">「1週間の出来事を話す時間で、自分のことを客観的に整理できます。ここが私にとっての第3の居場所です。」</p>
+            </div>
+            <div class="snap-center shrink-0 w-[300px] md:w-[350px] bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
+                <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center text-accent"><i data-lucide="user" class="w-5 h-5"></i></div><div><p class="font-bold text-sm">40代 女性</p><p class="text-xs text-white/50">アーユルヴェーダ</p></div></div>
+                <p class="text-white/80 text-sm leading-loose">「白湯を飲み始めて体調が良くなり、家族も真似し始めました。スパイスを自宅で試す楽しみができました。」</p>
+            </div>
+            <div class="snap-center shrink-0 w-[300px] md:w-[350px] bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
+                <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center text-accent"><i data-lucide="user" class="w-5 h-5"></i></div><div><p class="font-bold text-sm">50代 女性</p><p class="text-xs text-white/50">オンラインヨガ</p></div></div>
+                <p class="text-white/80 text-sm leading-loose">「とにかく声に癒されます。苦手だった捻りのポーズが驚くほど楽になり、コツの伝え方がとても分かりやすいです。」</p>
+            </div>
+            <div class="snap-center shrink-0 w-[300px] md:w-[350px] bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
+                <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center text-accent"><i data-lucide="user" class="w-5 h-5"></i></div><div><p class="font-bold text-sm">30代 女性</p><p class="text-xs text-white/50">ヨガクラス</p></div></div>
+                <p class="text-white/80 text-sm leading-loose">「少人数なのでその日の辛い部分を聞いてもらえて安心。ブロック等の補助具を使って無理なくポーズがとれるので、身体が硬くても気持ちよく受講できています。」</p>
+            </div>
+        </div>
+        <div class="text-center mt-4"><p class="text-xs text-white/50 flex items-center justify-center"><i data-lucide="arrow-left-right" class="w-4 h-4 mr-2"></i> スクロールしてご覧いただけます</p></div>
+    </section>
+
+    <!-- 料金プラン -->
+    <section id="pricing" class="py-24 bg-white relative">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <p class="text-accent font-medium mb-4 tracking-widest text-sm">PRICING</p>
+                <h2 class="font-serif text-3xl md:text-4xl font-medium mb-6 text-primary">料金プラン</h2>
+                <p class="text-textmain/80 leading-loose max-w-2xl mx-auto">続けることで、自分を大切にすることが当たり前になる――<br>そのための価格設定を心がけました。あなたのペースで、無理なく続けてください。</p>
+            </div>
+
+            <div class="bg-light p-8 rounded-2xl border border-sand mb-16 max-w-4xl mx-auto">
+                <h3 class="text-center font-bold text-primary mb-6">大人女性に選ばれる「4つの安心」</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex items-start"><i data-lucide="check-circle-2" class="w-5 h-5 text-accent mr-3 mt-0.5 shrink-0"></i><div><p class="font-bold text-sm mb-1 text-primary">シンプルな料金設定</p><p class="text-xs text-textmain/70">回数券・月パス・ドロップインから、自分のペースに合った方法を選べます。</p></div></div>
+                    <div class="flex items-start"><i data-lucide="check-circle-2" class="w-5 h-5 text-accent mr-3 mt-0.5 shrink-0"></i><div><p class="font-bold text-sm mb-1 text-primary">手ぶらでOK</p><p class="text-xs text-textmain/70">さっと来てさっと帰れる身軽さが忙しい方にご好評いただいています。マットレンタル無料！</p></div></div>
+                    <div class="flex items-start"><i data-lucide="check-circle-2" class="w-5 h-5 text-accent mr-3 mt-0.5 shrink-0"></i><div><p class="font-bold text-sm mb-1 text-primary">ベテラン講師が担当</p><p class="text-xs text-textmain/70">指導歴の長い経験豊富な講師。初めての方でも安心いただけるよう、誠実で親しみやすい応対を心がけています。</p></div></div>
+                    <div class="flex items-start"><i data-lucide="check-circle-2" class="w-5 h-5 text-accent mr-3 mt-0.5 shrink-0"></i><div><p class="font-bold text-sm mb-1 text-primary">LINEで直通</p><p class="text-xs text-textmain/70">急な欠席や問い合わせなど、細やかなサポートに講師が対応いたします。</p></div></div>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-[#fef5f6] to-[#fff0f3] border border-pink-100 rounded-2xl p-8 mb-12 text-center shadow-sm max-w-4xl mx-auto">
+                <p class="text-pink-500 font-bold text-xs tracking-widest mb-2">GRAND OPEN – APRIL 2026</p>
+                <h3 class="font-serif text-2xl font-bold text-primary mb-4">4月11日グランドオープン記念<br>Welcome チケット 3回</h3>
+                <div class="text-4xl font-bold text-pink-600 font-sans mb-4">¥3,000 <span class="text-sm font-normal text-textmain/60">（税込）</span></div>
+                <p class="text-sm font-bold text-primary mb-2">おひとり様1回限り・4月のみ・どのクラスでもご利用可</p>
+                <p class="text-sm text-textmain/80">3回通っていただき、お気に入りのクラスを見つけてください♪</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-6">
+                <div class="bg-white rounded-2xl p-8 border border-sand shadow-sm relative flex flex-col">
+                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-accent text-white text-xs font-bold px-4 py-1 rounded-full">おすすめ</div>
+                    <p class="text-xs font-bold text-primary/40 tracking-widest mb-2 text-center">WEEKLY HABIT</p>
+                    <h3 class="font-serif text-xl font-bold mb-4 text-center text-primary">4回券</h3>
+                    <div class="text-3xl font-bold mb-2 text-center text-primary">¥8,000</div>
+                    <p class="text-center text-sm font-bold text-accent mb-6">¥2,000 /回 <span class="text-xs font-normal text-textmain/60">(期限2ヶ月)</span></p>
+                    <ul class="text-sm space-y-3 flex-grow text-textmain/80 border-t border-sand pt-6">
+                        <li class="flex items-start"><i data-lucide="minus" class="w-4 h-4 text-primary/30 mr-2 mt-1 shrink-0"></i> 週1回のペースで習慣化</li>
+                        <li class="flex items-start"><i data-lucide="minus" class="w-4 h-4 text-primary/30 mr-2 mt-1 shrink-0"></i> マットレンタル無料</li>
+                        <li class="flex items-start font-bold text-primary mt-4"><i data-lucide="info" class="w-4 h-4 text-accent mr-2 mt-1 shrink-0"></i> 同日追加受講 ¥1,100</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-2xl p-8 border border-sand shadow-sm flex flex-col">
+                    <p class="text-xs font-bold text-primary/40 tracking-widest mb-2 text-center">BEST CHANGE</p>
+                    <h3 class="font-serif text-xl font-bold mb-4 text-center text-primary">8回券</h3>
+                    <div class="text-3xl font-bold mb-2 text-center text-primary">¥15,000</div>
+                    <p class="text-center text-sm font-bold text-accent mb-6">¥1,875 /回 <span class="text-xs font-normal text-textmain/60">(期限4ヶ月)</span></p>
+                    <ul class="text-sm space-y-3 flex-grow text-textmain/80 border-t border-sand pt-6">
+                        <li class="flex items-start"><i data-lucide="minus" class="w-4 h-4 text-primary/30 mr-2 mt-1 shrink-0"></i> 週2回のペースでしっかり変化</li>
+                        <li class="flex items-start"><i data-lucide="minus" class="w-4 h-4 text-primary/30 mr-2 mt-1 shrink-0"></i> マットレンタル無料</li>
+                        <li class="flex items-start font-bold text-primary mt-4"><i data-lucide="info" class="w-4 h-4 text-accent mr-2 mt-1 shrink-0"></i> 同日追加受講 ¥1,100</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-2xl p-8 border border-sand shadow-sm flex flex-col">
+                    <p class="text-xs font-bold text-primary/40 tracking-widest mb-2 text-center">UNLIMITED</p>
+                    <h3 class="font-serif text-xl font-bold mb-4 text-center text-primary">月パス（通い放題）</h3>
+                    <div class="text-3xl font-bold mb-2 text-center text-primary">¥13,000 <span class="text-sm font-normal text-primary/60">/月</span></div>
+                    <p class="text-center text-sm font-bold text-accent mb-1">もっともお得に通えるプラン</p>
+                    <p class="text-center text-xs text-textmain/50 mb-6">月8回来ると ¥1,625/回</p>
+                    <ul class="text-sm space-y-3 flex-grow text-textmain/80 border-t border-sand pt-6">
+                        <li class="flex items-start"><i data-lucide="minus" class="w-4 h-4 text-primary/30 mr-2 mt-1 shrink-0"></i> 1ヶ月間全てのクラスに通い放題</li>
+                        <li class="flex items-start"><i data-lucide="minus" class="w-4 h-4 text-primary/30 mr-2 mt-1 shrink-0"></i> 2本連続受講もOK</li>
+                        <li class="flex items-start"><i data-lucide="minus" class="w-4 h-4 text-primary/30 mr-2 mt-1 shrink-0"></i> マットレンタル無料</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="text-xs text-center text-textmain/60 mb-12">※同日追加受講は空きがある場合のみ、直接講師へご相談ください。</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-light rounded-xl p-6 border border-sand flex items-center justify-between">
+                    <div>
+                        <p class="text-[10px] font-bold text-primary/50 tracking-widest mb-1">FOR BEGINNER</p>
+                        <h4 class="font-bold text-primary mb-1">体験</h4>
+                        <p class="text-xs text-textmain/70">同日回数券購入でキャッシュバック</p>
+                    </div>
+                    <div class="text-xl font-bold text-primary">¥1,500 <span class="text-xs font-normal">/回</span></div>
+                </div>
+                <div class="bg-light rounded-xl p-6 border border-sand flex items-center justify-between">
+                    <div>
+                        <p class="text-[10px] font-bold text-primary/50 tracking-widest mb-1">DROP-IN</p>
+                        <h4 class="font-bold text-primary mb-1">ドロップイン</h4>
+                        <p class="text-xs text-textmain/70">オープン特別価格 (通常¥2,500)</p>
+                    </div>
+                    <div class="text-xl font-bold text-primary">¥2,200 <span class="text-xs font-normal">/回</span></div>
+                </div>
+            </div>
+            <div class="text-xs text-center text-textmain/60 mt-8 space-y-1">
+                <p>入会金・事務手数料はいただいておりません。価格は全て税込です。</p>
+                <p>お支払いは現金またはPayPayにて承ります。</p>
+                <p>オープン特別価格等は予告なく変更・終了する場合がございます。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Q&A -->
+    <section id="faq" class="py-24 bg-light border-y border-sand">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <p class="text-accent font-medium mb-4 tracking-widest text-sm">Q&A</p>
+                <h2 class="font-serif text-3xl md:text-4xl font-medium mb-6 text-primary">よくある質問</h2>
+            </div>
+            <div class="space-y-4">
+                <div class="bg-white rounded-xl border border-sand p-6 shadow-sm">
+                    <h3 class="flex items-start font-medium text-primary text-base md:text-lg mb-3"><span class="text-accent font-bold mr-3 mt-0.5">Q.</span>ヨガ初心者で、身体がすごく硬いのですが大丈夫ですか？</h3>
+                    <p class="flex items-start text-textmain/80 text-sm leading-loose"><span class="text-primary/40 font-bold mr-3 mt-0.5">A.</span>はい、全く問題ありません。講師自身も元々身体が硬く、ヘルニア持ちでした。ブロック等の補助具を使って、無理なく心地よいポーズへと導きますので、安心してご参加ください。</p>
+                </div>
+                <div class="bg-white rounded-xl border border-sand p-6 shadow-sm">
+                    <h3 class="flex items-start font-medium text-primary text-base md:text-lg mb-3"><span class="text-accent font-bold mr-3 mt-0.5">Q.</span>年齢層はどのくらいの方が多いですか？</h3>
+                    <p class="flex items-start text-textmain/80 text-sm leading-loose"><span class="text-primary/40 font-bold mr-3 mt-0.5">A.</span>40代から50代の女性をメインに、30代からシニア世代まで幅広くお越しいただいています。更年期のゆらぎや身体の変化を感じ始めた同世代の方が多く、落ち着いた雰囲気です。</p>
+                </div>
+                <div class="bg-white rounded-xl border border-sand p-6 shadow-sm">
+                    <h3 class="flex items-start font-medium text-primary text-base md:text-lg mb-3"><span class="text-accent font-bold mr-3 mt-0.5">Q.</span>持ち物は何が必要ですか？</h3>
+                    <p class="flex items-start text-textmain/80 text-sm leading-loose"><span class="text-primary/40 font-bold mr-3 mt-0.5">A.</span>動きやすい服装とお水、汗拭きタオルをお持ちください。ヨガマットや補助具は無料で完備しておりますので、お仕事帰りなど手ぶらでお越しいただけます。着替えスペースもあります。</p>
+                </div>
+                <div class="bg-white rounded-xl border border-sand p-6 shadow-sm">
+                    <h3 class="flex items-start font-medium text-primary text-base md:text-lg mb-3"><span class="text-accent font-bold mr-3 mt-0.5">Q.</span>入会金や年会費はかかりますか？</h3>
+                    <p class="flex items-start text-textmain/80 text-sm leading-loose"><span class="text-primary/40 font-bold mr-3 mt-0.5">A.</span>いいえ、入会金・年会費・事務手数料は一切ございません。ライフスタイルに合わせて回数券や月パスをお選びください。</p>
+                </div>
+                <div class="bg-white rounded-xl border border-sand p-6 shadow-sm">
+                    <h3 class="flex items-start font-medium text-primary text-base md:text-lg mb-3"><span class="text-accent font-bold mr-3 mt-0.5">Q.</span>どのくらいの頻度で通うのがいいですか？</h3>
+                    <p class="flex items-start text-textmain/80 text-sm leading-loose"><span class="text-primary/40 font-bold mr-3 mt-0.5">A.</span>体質改善や習慣化を目指すなら、まずは週1回から。より変化を実感したい方は週2回をおすすめしています。</p>
+                </div>
+                <div class="bg-white rounded-xl border border-sand p-6 shadow-sm">
+                    <h3 class="flex items-start font-medium text-primary text-base md:text-lg mb-3"><span class="text-accent font-bold mr-3 mt-0.5">Q.</span>ホットヨガとの違いは何ですか？</h3>
+                    <p class="flex items-start text-textmain/80 text-sm leading-loose"><span class="text-primary/40 font-bold mr-3 mt-0.5">A.</span>当教室は常温ヨガです。外から熱するのではなく、呼吸と動きで内側から代謝を上げます。また少人数制のため、お一人ずつの身体の悩みに合わせた細かい指導ができるのが大きな特徴です。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 講師プロフィール -->
+    <section id="instructor" class="py-24 bg-white border-b border-sand">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <p class="text-accent font-medium mb-4 tracking-widest text-sm">INSTRUCTOR</p>
+                <h2 class="font-serif text-3xl md:text-4xl font-medium mb-6 text-primary">講師プロフィール</h2>
+            </div>
+            <div class="bg-light p-8 md:p-12 rounded-3xl border border-sand flex flex-col md:flex-row gap-10 md:gap-16 items-start shadow-sm">
+                <div class="w-full md:w-1/3 flex flex-col items-center">
+                    <div class="w-48 h-48 md:w-56 md:h-56 mb-6">
+                        <img src="images/profile.jpg" alt="西山 楼蘭" class="w-full h-full object-cover rounded-full border-4 border-white shadow-md">
+                    </div>
+                    <div class="text-center w-full">
+                        <p class="text-sm text-accent font-bold tracking-wider mb-2">Ayur Flow Yoga 代表</p>
+                        <h3 class="font-serif text-2xl font-medium text-primary mb-2">西山 楼蘭 <span class="text-sm font-sans text-primary/60 block mt-1">Roran Nishiyama</span></h3>
+                        <p class="text-xs text-textmain/80 leading-relaxed mb-6">ヨガ・ピラティスインストラクター<br>アーユルヴェーダセラピスト</p>
+                        <div class="bg-white p-4 rounded-xl border border-sand text-left text-xs text-textmain/80 space-y-2 w-full">
+                            <p class="font-bold text-primary mb-2 border-b border-sand pb-1">保有資格</p>
+                            <p>・RYT200</p>
+                            <p>・ヨガニードラセラピスト</p>
+                            <p>・ピラティス</p>
+                            <p>・アーユルヴェーダセラピスト</p>
+                            <p>・レイキ / ヒプノセラピー 他</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-2/3">
+                    <h3 class="font-serif text-xl md:text-2xl font-medium text-primary leading-relaxed mb-8 border-l-4 border-accent pl-4">誰かのために頑張っているあなただからこそ、<br>これからはまず自分自身をもっと労ってほしい</h3>
+                    <div class="space-y-6 text-textmain/80 text-sm md:text-base leading-loose">
+                        <p>芸術系大学を卒業後、アパレル企業に就職。店舗スタッフ、店長を経てエリアマネージャーとして営業管理、人材育成に貢献。働く仲間をまず大切にすることをモットーに売り上げを伸ばし、アジア優秀店舗賞に選出。</p>
+                        <p>やりがいのある仕事の陰で、慢性的な疲労からくる様々な不調に悩まされる。出産後は育児も仕事も「ちゃんとやらなきゃ」と一人で抱え込み、とうとう心身のバランスを崩し退職に至ったことがヨガとアーユルヴェーダとの出会い。3年弱の療養期間を経てインストラクターへ転身。</p>
+                        <p>スポーツジムでの勤務ののち独立。大手ヨガスタジオ、地域密着のヨガスタジオなど様々な場所で初心者の方から中級者の方へ「自分を大切にするためのヨガ」をお届けしてきました。これまで、延べ6万人の方、約1,000クラスの指導実績。</p>
+                        <p>日々一生懸命誰かのために頑張っている皆さんが、健やかに笑顔で過ごせること・自分を大切にすることを諦めないこと・来るだけで楽しく、癒され、元気になれる明るく穏やかなクラスを心がけています。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 体験お申し込みの流れ -->
+    <section id="flow" class="py-24 bg-light border-b border-sand">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-3xl md:text-4xl font-medium mb-4 text-primary">体験お申し込みの流れ</h2>
+                <p class="text-textmain/80">ご相談だけでも、お気軽にどうぞ</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <div class="bg-white p-8 rounded-2xl border border-sand shadow-sm text-center">
+                    <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">1</div>
+                    <h4 class="font-bold text-primary mb-3">LINE公式を友だち追加</h4>
+                    <p class="text-sm text-textmain/80">下のボタンから、スタジオ公式LINEを友だち追加してください。</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-sand shadow-sm text-center">
+                    <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">2</div>
+                    <h4 class="font-bold text-primary mb-3">「体験」と送信</h4>
+                    <p class="text-sm text-textmain/80">チャット画面で「<strong class="text-accent">体験</strong>」と一言だけメッセージを送ってください。</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-sand shadow-sm text-center">
+                    <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">3</div>
+                    <h4 class="font-bold text-primary mb-3">日程調整・確定</h4>
+                    <p class="text-sm text-textmain/80">事前入力フォームにご記入いただき、講師より日程確定のご連絡をいたします。当日は15分前を目安にお越しください。</p>
+                </div>
+            </div>
+            <div class="text-center bg-white p-8 md:p-12 rounded-2xl border border-sand shadow-md">
+                <p class="font-bold text-primary mb-2 flex items-center justify-center"><i data-lucide="leaf" class="w-4 h-4 mr-2 text-sage"></i> 手ぶらOK・好きな時に通える・癒される</p>
+                <p class="text-sm text-textmain/70 mb-8">ご質問やご不安な点も、LINEからお気軽にお問い合わせください。</p>
+                <a href="https://lin.ee/08iFi9J" target="_blank" class="inline-flex items-center justify-center bg-[#06C755] text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-[#05b34c] transition shadow-lg w-full md:w-auto min-w-[300px]">
+                    <i data-lucide="message-circle" class="w-6 h-6 mr-2"></i> LINEで体験予約する
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 会員向け予約セクション -->
+    <section class="py-16 bg-sand/40 border-b border-sand">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-xs tracking-widest text-textmain/50 uppercase mb-3">For Members</p>
+            <h2 class="font-serif text-2xl md:text-3xl text-primary mb-3">すでに会員の方へ</h2>
+            <p class="text-sm text-textmain/70 mb-8">オンラインからクラスのご予約ができます。<br>ご都合の良い日時をお選びください。</p>
+            <a href="https://app.squareup.com/appointments/book/classes/9u5x6uxytwo5eo/LB5FMBQE20694/classes" target="_blank" class="inline-flex items-center justify-center bg-accent text-white px-8 py-4 rounded-full text-lg font-bold hover:opacity-90 transition shadow-lg w-full md:w-auto min-w-[300px]">
+                <i data-lucide="calendar" class="w-6 h-6 mr-2"></i> クラスを予約する
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white pt-24 pb-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 border-b border-white/20 pb-16">
+                <div class="lg:col-span-2">
+                    <div class="font-serif text-3xl font-bold tracking-wider mb-2">Ayur Flow <span class="text-sm font-sans font-normal ml-2">金町</span></div>
+                    <p class="text-white/70 text-sm mb-8">40代からの心と身体に寄り添う 大人の朝活少人数制クラス</p>
+                    <h4 class="font-bold mb-4 text-sm tracking-widest text-accent border-b border-white/10 pb-2 inline-block">ACCESS</h4>
+                    <div class="space-y-3 text-sm text-white/90 mb-6">
+                        <p class="flex items-start"><i data-lucide="map-pin" class="w-4 h-4 mr-2 mt-0.5 shrink-0 text-accent"></i> 〒125-0041 東京都葛飾区東金町１丁目３８−４<br>ニュー金町ビル ４F</p>
+                        <p class="flex items-start text-xs text-white/80 mt-1"><i data-lucide="flag" class="w-4 h-4 mr-2 mt-0.5 shrink-0 text-accent"></i> レトロな窓のレンガビルです。</p>
+                        <p class="flex items-start mt-3"><i data-lucide="train" class="w-4 h-4 mr-2 mt-0.5 shrink-0 text-accent"></i> JR常磐線・京成金町線「金町駅」北口より徒歩約3分</p>
+                        <p class="flex items-start text-xs text-white/60"><i data-lucide="info" class="w-3 h-3 mr-2 mt-0.5 shrink-0"></i> ※駐車場・駐輪場は各自で近隣をご利用ください。</p>
+                    </div>
+                    <a href="https://maps.app.goo.gl/DhdusES2PgxfMU1D9?g_st=ic" target="_blank" class="inline-flex items-center text-sm text-white/80 hover:text-white underline decoration-white/30 underline-offset-4 mb-8">
+                        <i data-lucide="map" class="w-4 h-4 mr-2"></i> Google マップで見る
+                    </a>
+                    <div class="flex flex-wrap gap-3 mt-4">
+                        <a href="https://www.instagram.com/ayurflow_kanamachi/" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                        <a href="https://lin.ee/08iFi9J" target="_blank" class="w-auto px-4 h-10 rounded-full bg-[#06C755] flex items-center justify-center hover:bg-[#05b34c] transition text-sm font-bold"><i data-lucide="message-circle" class="w-4 h-4 mr-2"></i> LINE公式</a>
+                        <a href="https://app.squareup.com/appointments/book/classes/9u5x6uxytwo5eo/LB5FMBQE20694/classes" target="_blank" class="w-auto px-4 h-10 rounded-full bg-accent flex items-center justify-center hover:opacity-90 transition text-sm font-bold text-white"><i data-lucide="calendar" class="w-4 h-4 mr-2"></i> 会員予約</a>
+                    </div>
+                </div>
+                <div class="lg:col-span-2">
+                    <h4 class="font-bold mb-6 text-sm tracking-widest text-accent border-b border-white/10 pb-2">SITEMAP</h4>
+                    <div class="grid grid-cols-2 gap-4 mb-10">
+                        <ul class="space-y-4 text-sm text-white/80">
+                            <li><a href="#message" class="hover:text-white transition flex items-center"><i data-lucide="chevron-right" class="w-3 h-3 mr-2 text-white/30"></i> 想い</a></li>
+                            <li><a href="#features" class="hover:text-white transition flex items-center"><i data-lucide="chevron-right" class="w-3 h-3 mr-2 text-white/30"></i> 特徴・メソッド</a></li>
+                            <li><a href="#classes" class="hover:text-white transition flex items-center"><i data-lucide="chevron-right" class="w-3 h-3 mr-2 text-white/30"></i> クラス紹介</a></li>
+                        </ul>
+                        <ul class="space-y-4 text-sm text-white/80">
+                            <li><a href="#instructor" class="hover:text-white transition flex items-center"><i data-lucide="chevron-right" class="w-3 h-3 mr-2 text-white/30"></i> 講師プロフィール</a></li>
+                            <li><a href="#voices" class="hover:text-white transition flex items-center"><i data-lucide="chevron-right" class="w-3 h-3 mr-2 text-white/30"></i> お客様の声</a></li>
+                            <li><a href="#pricing" class="hover:text-white transition flex items-center"><i data-lucide="chevron-right" class="w-3 h-3 mr-2 text-white/30"></i> 料金・Q&A</a></li>
+                        </ul>
+                    </div>
+                    <div class="bg-white/5 p-5 rounded-xl border border-white/10 relative overflow-hidden group">
+                        <div class="absolute inset-0 bg-gradient-to-r from-purple-500/10 via-pink-500/10 to-orange-500/10 opacity-50 group-hover:opacity-100 transition duration-500"></div>
+                        <a href="https://www.instagram.com/ayurflow_kanamachi/" target="_blank" class="relative z-10 flex items-start hover:text-white/90 transition">
+                            <i data-lucide="instagram" class="w-6 h-6 mr-3 text-pink-300 shrink-0 mt-0.5"></i>
+                            <p class="text-sm text-white/90 leading-relaxed font-medium">最新の情報、スタジオの様子はInstagramから発信しています。ぜひご覧ください。</p>
+                        </a>
+                    </div>
+                    <div class="mt-6 space-y-2 text-xs text-white/50">
+                        <p>お問い合わせ：<a href="/cdn-cgi/l/email-protection#a6cec3cacac9e6cbd3cdd38bc7dfd3d4d0c3c2c788c5c9cb" class="hover:text-white transition"><span class="__cf_email__" data-cfemail="96fef3fafaf9d6fbe3fde3bbf7efe3e4e0f3f2f7b8f5f9fb">[email&#160;protected]</span></a></p>
+                        <p>講師Instagram：<a href="https://www.instagram.com/roran_muku/" target="_blank" class="hover:text-white transition">@roran_muku</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center text-xs text-white/40">&copy; 2026 Ayu
